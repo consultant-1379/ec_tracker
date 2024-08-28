@@ -1,0 +1,952 @@
+html,body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+html {
+	overflow-y: scroll;
+}
+
+#imfContainer {
+	min-height: 100%;
+	position: relative;
+	width: 100%;
+	min-width: 1000px;
+}
+
+/*Css Used for the headers */
+#imfBanner {
+	display: block;
+	min-height: 70px;
+	background-color: #fff;
+	position: relative;
+	z-index: 101;
+	padding-right:10%;
+	padding-left:10%;
+	min-width:800px;
+}
+
+#imfBannerContent {
+	font: normal 2.00em/50px 'Ericsson Capital TT', Arial, Helvetica, sans-serif;
+	color: rgb(51, 102, 153);
+	top:10px;
+	position: absolute;
+	background-color: #fff;
+	padding-left: 60px;
+	text-align: left;
+	z-index: 2;
+	white-space: nowrap;
+	background-image: url(../images/ericsson_logo_top.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	min-width:580px;
+}
+
+#imfBannerLogin {
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	top: 30px;
+	right: 10%;
+	z-index: 2;
+}
+
+#imfBannerLogin ul {
+	list-style: none;
+	margin: 0;
+}
+
+#imfBannerLogin li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: inline;
+	margin-left: 20px;
+}
+
+#imfBannerLogin a, #imfBannerLogin a:visited{
+	font-size: 14px;
+	color: rgb(51, 102, 153);
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+#imfBannerLogin a:hover{
+	color: #000;
+}
+
+#imfBannerLogin #loginLink{
+	background-image: url(../images/login.jpg);
+	padding-left: 20px;
+}
+
+#imfBannerLogin #helpLink{
+	background-image: url(../images/help.jpg);
+	padding-left: 30px;
+}
+
+#imfBannerLogin #user{
+	font-weight: bold;
+	margin-left: 6px;
+}
+
+/*CSS used by menu.php*/
+#imfMenu {
+	display: block;
+	height: 20px;
+	max-height: 20px;
+	background-color: #fff;
+	position: relative;
+	background-image: url(../images/ebottomgrad.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	z-index: 3;
+	padding-top:4px;
+	padding-bottom: 14px;
+	white-space: nowrap;
+	padding-right:10%;
+	padding-left:10%;
+	min-width:800px;
+}
+
+#imfMenuContent {
+	position: relative;
+	left: auto;
+	background-color: #fff;
+	padding-left: 64px;
+	padding-right: 66px;
+	text-align: left;
+	z-index: 2;
+	white-space: nowrap;
+	min-width:600px;
+}
+
+/* CSS for dropdown menu */
+.nav, .nav ul { 
+	list-style: none;
+	margin: 0;
+}
+
+.nav {
+	font-family: Arial, Helvetica, sans-serif;
+	z-index: 100;
+	position: relative;
+}
+.nav li {
+	border-left: 0px solid #000;
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: inline;
+}
+.nav li a, .nav li a:link, .nav li a:active, .nav li a:visited {
+	font: 18px Arial, Helvetica, sans-serif;
+	background: #fff;
+	color: rgb(51, 102, 153);
+	display: block;
+	padding: 0px 40px 0px 10px;
+	text-decoration: none;
+	border:0px;
+	border-left:3px solid #eee;
+}
+
+#nav-one li:hover a,
+#nav-one li.sfHover a {
+	background: #fff;
+	color: #000;
+	border:3px solid #eee;
+	border-top:0px;
+	border-right:0px;
+	border-bottom:0px;
+	padding: 0px 40px 0px 10px;
+}
+
+#nav-one li:hover ul a, 
+#nav-one li.sfHover ul a {
+	background: url("../images/esprite.png") no-repeat scroll 0 -1060px
+		transparent;
+	font: 16px Arial, Helvetica, sans-serif;
+	border-left:0px;
+	border-bottom:0px;
+	padding-top:8px;
+	padding-bottom:6px;
+	padding-left:20px;
+	color: rgb(51, 102, 153);
+}
+#nav-one li:hover ul a:hover, 
+#nav-one li.sfHover ul a:hover {
+	background-position: 0 -1139px;
+	color: #000;	
+}
+
+.nav ul {
+	background: #fff;
+	border-bottom: 0px solid #000;
+	list-style: none;
+	margin: 0;
+	position: absolute;
+	top: -999em;
+	left: -1px;
+}
+.nav ul.itemGroup{
+	padding: 25px 15px 15px 15px;
+	border: 3px solid #eee;
+	border-top:0px;
+}
+
+.nav li:hover ul,
+.nav li.sfHover ul {
+	top: 20px;
+}
+.nav ul li {
+	border: 0;
+	float: none;
+}
+.nav ul a {
+	border: 0px solid #000;
+	white-space: nowrap
+}
+.nav ul a:hover { 
+	color: #000;
+}
+
+#nav li:hover ul, #nav li.sfhover ul {
+	display: block;
+	left: auto;
+	position:static;
+	padding: 4px;
+}
+
+/*CSS for all php files that print main content ie modelRegister.php*/
+#imfContentWrapper {
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+	padding: 0 0 120px 0;
+	margin: auto;
+	text-align: left;
+	min-width:1000px;
+}
+
+#imfContent {
+	position: static;
+	background-color: #fff;
+	font: 14px Arial, Helvetica, sans-serif;
+	padding:30px 50px;
+	text-align: left;
+	padding-right:10%;
+	padding-left:10%;
+	min-width:800px;
+}
+
+pre {
+	font: 14px Arial, Helvetica, sans-serif;
+}
+
+#imfContent h1{
+	font-weight:normal;
+	font-size:36px;
+	padding:0px 0px 20px 0px;
+}
+td.placeholder-td {
+	padding: 10px 0 0 20px;
+	width: 240px;
+	font-size: 10pt;
+	color: #999;
+	vertical-align: top;
+}
+
+/*CSS for footer.php*/
+#imfFooterWrapper {
+	display: block;
+	background-color: #fff;
+	width: 100%;
+	background-image: url(../images/ebottomgrad.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	min-width:1000px;
+}
+
+#imfFooter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-image: url(../images/ebottomgrad.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #fff;
+	padding: 10px 10px 50px 10px;
+	text-align: right; 
+	margin: auto;
+	min-width:980px;
+}
+
+/*CSS for Forms*/
+label {
+	width: 4em;
+	float: left;
+	text-align: right;
+	margin-right: 0.5em;
+	display: block;
+}
+
+.submit input {
+	margin-left: 4.5em;
+}
+
+
+table {
+	display : block;
+	page-break-after: always;
+	page-break-inside: avoid;
+}
+
+thead {
+	display: table-header-group;
+}
+
+tr {
+	page-break-before:auto;
+}
+
+td {
+	page-break-before:auto;
+}
+
+
+/* ----------- stylized ----------- */
+#imfContent label {
+	display:block;
+	font-weight:bold;
+	text-align:right;
+	width:140px;
+	float:left;
+}
+#imfContent .small {
+	color:#666666;
+	display:block;
+	font-size:11px;
+	font-weight:normal;
+	text-align:right;
+	width:140px;
+}
+#imfContent input {
+	float:left;
+	font-size:12px;
+	padding:4px 2px;
+	border:solid 1px #aacfe4;
+	width:200px;
+	margin:2px 0 20px 10px;
+}
+
+#imfContent button {
+	clear:both;
+	margin-left:150px;
+	width:125px;
+	height:31px;
+	background:#666666 ;
+	text-align:center;
+	line-height:31px;
+	color:#FFFFFF;
+	font-size:11px;
+	font-weight:bold;
+}
+
+
+p, h1, form, button {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+.spacer {
+	clear:both;
+	height:1px;
+}
+
+/* ----------- My Form ----------- */
+.myform {
+	margin:0 0 10px 0;;
+	padding:4px 0 4px 0;
+}
+
+
+/* ----------- stylized ----------- */
+#stylized {
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#stylized h1 {
+	font-size:20px;
+	font-weight:normal;
+	margin-bottom:8px;
+}
+#stylized p{
+	font: 14px Arial, Helvetica, sans-serif;
+	color:#666;
+	margin-bottom:20px;
+	border-bottom:solid 1px rgb(51, 102, 153);
+	padding-bottom:10px;
+}
+
+
+#stylized .comment{
+	position:relative;
+	color:#666;
+	text-align:justify;
+	font-size:12px;
+	font-weight:normal;
+	text-align:left;
+	width:540px;
+}
+#stylized .comment span{
+	display:block; 
+	text-align:justify;
+	margin-bottom:6px;
+}
+#stylized input,textarea,select{
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;  
+	font-size:14px;
+	padding:4px 2px;
+	border:solid 1px rgb(51, 102, 153);
+	width:180px;
+	margin:2px 0 0px 0px;
+}
+#stylized textarea{
+	resize: vertical;
+}
+#stylized input[disabled], input[readonly], select[disabled], select[readonly], checkbox[disabled], checkbox[readonly], textarea[disabled], textarea[readonly] 
+{ 
+	float:left;
+	background-color: #dcdcdc; 
+	border:solid 1px rgb(51, 102, 153);
+	color: #000000; 
+}
+#stylized button{
+	clear:both;
+	margin-left:150px;
+	margin-top:10px;
+	width:125px;
+	height:31px;
+	background:rgb(51, 102, 153);
+	text-align:center;
+	line-height:31px;
+	color:#fff;
+	font-size:11px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#stylized .removetr_button{
+	clear:both;
+	margin-left:0px;
+	margin-top:2px;
+	width:38px;
+	height:26px;
+	background:rgb(51, 102, 153);
+	text-align:center;
+	line-height:26px;
+	color:#fff;
+	font-size:9px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#stylized .addtr_button{
+	clear:both;
+	margin-left:0px;
+	margin-top:2px;
+	width:38px;
+	height:26px;
+	background:rgb(51, 102, 153);
+	text-align:center;
+	line-height:26px;
+	color:#fff;
+	font-size:9px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#stylized .addtr_div_place{
+	clear:both;
+	margin-left:0px;
+	margin-top:2px;
+	width:38px;
+	background:#fff;
+	height:26px;
+}
+
+#stylized .removepkg_button{
+	clear:both;
+	margin-left:0px;
+	margin-top:2px;
+	width:38px;
+	height:26px;
+	background:rgb(51, 102, 153);
+	text-align:center;
+	line-height:26px;
+	color:#fff;
+	font-size:9px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#stylized .addpkg_button{
+	clear:both;
+	margin-left:0px;
+	margin-top:2px;
+	width:38px;
+	height:26px;
+	background:rgb(51, 102, 153);
+	text-align:center;
+	line-height:26px;
+	color:#fff;
+	font-size:9px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#stylized .addpkg_div_place{
+	clear:both;
+	margin-left:0px;
+	margin-top:2px;
+	width:38px;
+	background:#fff;
+	height:26px;
+}
+
+
+#stylized  td{
+	padding-left:25px;
+	padding-bottom:15px;
+	vertical-align: top;
+	text-align:left;
+	width:160px;
+	border:solid 0px rgb(51, 102, 153);
+
+}
+
+#stylized .TRtable{
+width:860px;
+}
+
+#stylized  .TR_td_top{
+	padding-left:0px;
+	padding-bottom:0px;
+	vertical-align: top;
+	text-align:left;
+	width:160px;
+	border:solid 0px rgb(51, 102, 153);
+}
+
+
+#stylized  .TR_td{
+	padding-left:15px;
+	padding-bottom:0px;
+	vertical-align: top;
+	text-align:left;
+	width:260px;
+	border:solid 0px rgb(51, 102, 153);
+}
+
+
+#stylized .PKGtable{
+width:860px;
+}
+
+
+
+#stylized  .PKG_td{
+	padding-left:5px;
+	padding-bottom:0px;
+	vertical-align: top;
+	text-align:left;
+	width:50px;
+	border:solid 0px rgb(51, 102, 153);
+}
+
+
+
+#stylized  th{
+	vertical-align: top;
+	font-weight:normal;
+	text-align:right;
+	width:260px;
+}
+#stylized label{
+	vertical-align: top;
+	font-weight:normal;
+	text-align:right;
+	width:100%;
+}
+
+#stylized span.error_message{
+	color:red;
+	font-size:12px;
+	font-weight:normal;
+	text-align:left;
+	width:200px;
+}
+
+/*Log In form style*/
+#stylized.loginform {
+	min-height: 400px;
+}
+
+#loginContainer {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 420px;
+	height: 300px;
+	margin-top: -150px;
+	margin-left: -210px;
+	padding: 20px;
+	border: solid 1px rgb(51, 102, 153);
+	border-radius: 2px;
+	background-color: #fff;
+}
+
+#loginContainer  h1 {
+	font: normal 2.00em/50px 'Ericsson Capital TT', Arial, Helvetica, sans-serif;
+	color: rgb(51, 102, 153);
+	background-image: url(../images/ericsson_logo_top.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 60px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#loginContainer  th {
+	width: auto;
+	padding-left: 40px;
+}
+
+#loginContainer  td {
+	width: 100%;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+/*Results from searches*/
+
+#ecListsWrapper .myform {
+	margin:0 0 30px 0;;
+	padding:4px 0 4px 0;
+	display:none;
+}
+
+#ecListsWrapper .ecListWapper{
+border:1px;
+}
+
+#result{
+	border-bottom:2px solid rgb(51, 102, 153);
+	height: auto;
+}
+
+
+#result .viewCommentButton{
+	margin-left:20px;
+	padding:3px;
+	background:rgb(51, 102, 153);;
+	text-align:center;
+	/*line-height:31px;*/
+	color:#FFFFFF;
+	font-size:9px;
+	font-weight:bold;
+	cursor:pointer;
+	text-decoration: none; /*remve underline*/
+}
+
+#result .expandImg{
+	cursor:pointer;
+	/*color: rgb(51, 102, 153);*/
+}
+
+#result .commentColumn{
+	text-decoration: underline; /*remve underline*/
+	cursor:pointer;
+	/*color: rgb(51, 102, 153);*/
+}
+
+
+.titleID{
+	font: 16px Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	background:rgb(51, 102, 153);
+	color: #F7F7F7;
+	padding: 5px 0px 5px 10px;
+	border:1px solid #eee;
+	cursor:pointer;
+}
+
+#result th {
+	font-weight: bold;
+}
+
+#result table.normalTable {
+	overflow: hidden;
+	vertical-align: top;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+#result td.normalTable {
+	text-align:left;
+	padding:0.5em;
+	width:400px;
+}
+
+#result th.normalTable {
+	text-align:left;
+	width:400px;
+	background-color: #F7F7F7;
+	padding: 0.8em 0.5em;
+	color: #666;
+	font-weight: normal;
+}
+#result tr.normalTable{
+	border: solid 1px rgb(51, 102, 153);
+	text-align:left;
+	padding:0.5em;
+}
+
+#result table.innerTable{
+	/*overflow: hidden; /* Fixing the problem in modern browsers */
+       /*zoom: 1; /* Fixing in old IE by applying hasLayout */
+	vertical-align: top;
+	float: left;
+	margin:20px;
+}
+#result td.innerTable {
+	text-align:center;
+	padding:0.5em;
+	width:100px;
+}
+#result th.innerTable{
+	text-align:center;
+	width:400px;
+	background-color: #F7F7F7;
+	padding: 0.5em;
+	color: #666;
+	font-weight: normal;
+}
+#result tr.innerTable{
+	text-align:left;
+	padding:0.5em;
+	border: solid 1px rgb(51, 102, 153);
+}
+#result table.outerTable, th.outerTable, td.outerTable, tr.outerTable{
+	border:0px;
+	padding-right:20px;
+	margin:0px;
+	vertical-align:top;	
+}
+
+#result h1.ecresult {
+	font-size:18px;
+	font-weight:normal;
+	display:inline;
+}
+
+#result p {
+	font: 14px Arial, Helvetica, sans-serif;
+	color:#666;
+	border-bottom:solid 1px rgb(51, 102, 153);
+	padding-bottom:10px;
+}
+
+
+.progressWrapper {
+	width: 240px;
+	overflow: hidden;
+}
+
+.progressContainer {
+	margin: 5px;
+	padding: 4px;
+	border: solid 1px #E8E8E8;
+	background-color: #F7F7F7;
+	overflow: hidden;
+}
+/* Message */
+.message {
+	margin: 1em 0;
+	padding: 10px 20px;
+	border: solid 1px #FFDD99;
+	background-color: #FFFFCC;
+	overflow: hidden;
+}
+/* Error */
+.red {
+	border: solid 1px #B50000;
+	background-color: #FFEBEB;
+}
+
+/* Current */
+.green {
+	border: solid 1px #DDF0DD;
+	background-color: #EBFFEB;
+}
+
+/* Complete */
+.blue {
+	border: solid 1px #CEE2F2;
+	background-color: #F0F5FF;
+}
+
+.progressName {
+	font-size: 8pt;
+	font-weight: 700;
+	color: #555;
+	width: 170px;
+	height: 14px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.progressBarInProgress,
+.progressBarComplete,
+.progressBarError {
+	font-size: 0;
+	width: 0%;
+	height: 2px;
+	background-color: blue;
+	margin-top: 2px;
+}
+
+.progressBarComplete {
+	width: 100%;
+	background-color: green;
+	visibility: hidden;
+}
+
+.progressBarError {
+	width: 100%;
+	background-color: red;
+	visibility: hidden;
+}
+
+.progressBarStatus {
+	margin-top: 2px;
+	width: 170px;
+	font-size: 7pt;
+	font-family: Arial;
+	text-align: left;
+	white-space: nowrap;
+}
+
+a.progressCancel {
+	font-size: 0;
+	display: block;
+	height: 14px;
+	width: 14px;
+	background-image: url(../images/cancelbutton.gif);
+	background-repeat: no-repeat;
+	background-position: -14px 0px;
+	float: right;
+}
+
+a.progressCancel:hover {
+	background-position: 0px 0px;
+}
+
+/* -- SWFUpload Object Styles ------------------------------- */
+.swfupload {
+	vertical-align: top;
+}
+
+div.fieldset {
+	border:  1px solid rgb(51, 102, 153);
+	margin: 10px 0;
+	padding: 20px 10px;
+}
+
+div.fieldset span.legend {
+	position: relative;
+	background-color: #FFF;
+	padding: 3px;
+	top: -30px;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+/* -- Validation Result Styles ----------------*/
+#report {
+	text-align: left;
+}
+#report table {
+	padding-right: 0;
+}
+#report td, #report th{
+	max-width: 600px;
+	width: auto;
+	text-align: left;
+	padding: 4px 26px 4px 0;
+}
+#report th {
+	padding: 0 26px 10px 0;
+	color: rgb(51, 102, 153);
+}
+#report td.success, td.warning{
+	background: url("../images/success.png") no-repeat scroll 0 4px
+		transparent;
+	padding-right: 40px;
+}
+#report td.fail{
+	background: url("../images/fail.png") no-repeat scroll 0 4px
+		transparent;
+	padding-right: 40px;
+}
+#report td.error{
+	background: url("../images/error.png") no-repeat scroll 0 4px
+		transparent;
+	padding-right: 40px;
+}
+
+#report td.successMessage{
+	color: green;
+}
+#report td.warningMessage{
+	color: #FF9933;
+}
+#report td.failMessage{
+	color: red;
+}
+#report td.errorMessage{
+	color: red;
+}
+
+a.reportDownload {
+	background: url("../images/esprite.png") no-repeat scroll 0 -97px
+		transparent;
+	color: rgb(51, 102, 153);
+	padding-left: 18px;
+	text-decoration: none;
+}
+a.reportDownload:hover {
+	background-position: -13px -64px;
+	color: #000;	
+}
+a.model {
+	background: url("../images/esprite-ta.png") no-repeat scroll 0 -514px
+		transparent;
+	color: rgb(51, 102, 153);
+	padding-left: 18px;
+	text-decoration: none;
+}
+
+a.model:hover {
+	color: #000;	
+}
+

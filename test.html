@@ -1,0 +1,1284 @@
+spawn /usr/bin/ssh eniqdmt@150.132.151.70
+Failed to add the host to the list of known hosts (/.ssh/known_hosts).
+
+Enter Windows password:
+Last login: Tue Nov 27 17:12:46 2012 from atrcx1089.athte
+
+Oracle Corporation      SunOS 5.10      Generic Patch   January 2005
+Oracle Corporation      SunOS 5.10      Generic Patch   January 2005
+selid1a029.eniqdmt.41> <font color='white'>
+<PRE>
+/usr/atria/bin/cleartool setview www_eniq
+
+selid1a029.eniqdmt.41> cd /vobs/ossrc/del-mgt
+
+/vobs/ossrc/del-mgt
+selid1a029.eniqdmt.42> /vobs/ossrc/del-mgt/bin/eniq_broadcast.pl -o CronLogon
+
+<font color='white' size=1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+        <head>
+                <script language="javascript" src="list.js"></script>
+                <script type="text/javascript" src="http://atrcx1089.athtem.eei.ericsson.se/bin/ENIQ_SEARCH/include.js"></script>
+                <script type="text/javascript" src="http://atrcx1089.athtem.eei.ericsson.se/bin/ENIQ_SEARCH/populate_forms.js"></script>
+                <script type="text/javascript" src="http://atrcx1089.athtem.eei.ericsson.se/bin/ENIQ_SEARCH/excanvas.js"></script>
+                <script type="text/javascript" src="http://atrcx1089.athtem.eei.ericsson.se/bin/ENIQ_SEARCH/coolclock.js"></script>
+                <script type="text/javascript" src="http://atrcx1089.athtem.eei.ericsson.se/bin/ENIQ_SEARCH/moreskins.js"></script>
+                <script language="JavaScript">
+                        function showfield(name)
+                        {
+                                //Comment out until all aspects of test available
+                        if (name=='LLSV')document.getElementById('div1').innerHTML='<table width="439" height="50" border="1"><tr><th width="90" scope="col"></th><th width="162" scope="col"></th></tr><tr><td>LLSV Number</td><td><input type="text" name="BuildNum" id="BuildNum"/></td><td>e.g.: 3</td></tr><tr><td>Server Action</td><td><select name="ServerAction" size="1" id="ServerAction" onchange="showfield3(this.options[this.selectedIndex].value)"><option value="PS4" align="center">Please Select</option><option value="II" align="center">Initial Install</option><option value="UG" align="center">Upgrade</option></select></td><td>&nbsp;</td></tr></table>';
+                        //if (name=='LLSV')document.getElementById('div1').innerHTML='<table width="439" height="50" border="1"><tr><th width="167" scope="col"></th><th width="162" scope="col"></th><th width="88" scope="col"></th></tr><tr><td>LLSV Number</td><td><input type="text" name="BuildNum" id="BuildNum"/></td><td>e.g.: 3</td></tr><tr><td>Server Action</td><td><select name="ServerAction" size="1" id="ServerAction" onchange="showfield3(this.options[this.selectedIndex].value)"><option value="PS4" align="center">Please Select</option><option value="II" align="center">Initial Install</option></select></td><td>&nbsp;</td></tr></table>';
+                                else document.getElementById('div1').innerHTML='';
+        
+                        }
+
+                        function showfield2(name)
+                        {
+                                //if (name=='ST')document.getElementById('div2').innerHTML='<table width="439" height="50" border="1"><tr><th width="90" scope="col"></th><th width="162" scope="col"></th></tr>><tr><td>ENIQ II Server</td><td><input type="text" name="ENIQServer" id="ENIQServer" /></td><td></td></tr><tr><td>ENIQ UG Server</td><td><input type="text" name="ENIQUGServer" id="ENIQUGServer" /></td><td></td></tr></table>';
+                                if (name=='ST')document.getElementById('div2').innerHTML='<table width="439" height="50" border="1"><tr><th width="90" scope="col"></th><th width="162" scope="col"></th></tr><tr><td>Install Server</td><td><input type="text" name="ENIQServer" id="ENIQServer" /></td><td></td></tr><tr><td>Upgrade Server</td><td><input type="text" name="ENIQUGServer" id="ENIQUGServer" /></td><td></td></tr></table>';
+                                else if(name=='SM'){
+                                                document.getElementById('div2').innerHTML='<table width="439" height="50" border="1"><tr><th width="90" scope="col"></th><th width="162" scope="col"></th></tr><tr><td>Coordinator </td><td><input type="text" name="ENIQCoordinator" id="ENIQCoordinator" /></td><td></td></tr><tr><td>Presentaion </td><td><input type="text" name="ENIQPresentation" id="ENIQPresentation" /></td><td></td></tr><tr><td>Mediation </td><td><input type="text" name="ENIQMediation" id="ENIQMediation" /></td><td></td></tr><tr><td>Reader 1 </td><td><input type="text" name="ENIQReader1" id="ENIQReader1" /></td><td></td></tr></table>';
+                                        }
+                                        else if(name=='STATS_SM')
+                                        {
+                                                document.getElementById('div2').innerHTML='<table width="439" height="50" border="1"><tr><th width="90" scope="col"></th><th width="162" scope="col"></th></tr><tr><td>Coordinator </td><td><input type="text" name="ENIQCoordinator" id="ENIQCoordinator" /></td><td></td></tr><tr><td>Engine </td><td><input type="text" name="ENIQEngine" id="ENIQEngine" /></td><td></td></tr><tr><td>Reader 1</td><td><input type="text" name="ENIQReader1" id="ENIQReader1" /></td><td></td></tr><tr><td>Reader 2 </td><td><input type="text" name="ENIQReader2" id="ENIQReader2" /></td><td></td></tr></table>';
+                                }
+                                else if(name=='MD')document.getElementById('div2').innerHTML='<table width="439" height="50" border="1"><tr><th width="90" scope="col"></th><th width="162" scope="col"></th></tr><tr><td>Coordinator </td><td><input type="text" name="ENIQCoordinator" id="ENIQCoordinator" /></td><td></td></tr><tr><td>Presentaion </td><td><input type="text" name="ENIQPresentation" id="ENIQPresentation" /></td><td></td></tr><tr><td>Mediation </td><td><input type="text" name="ENIQMediation" id="ENIQMediation" /></td><td></td></tr><tr><td>Reader 1 </td><td><input type="text" name="ENIQReader1" id="ENIQReader1" /></td><td></td></tr><tr><td>Reader 2 </td><td><input type="text" name="ENIQReader2" id="ENIQReader2" /></td><td></td></tr><tr><td>Reader 3 </td><td><input type="text" name="ENIQReader3" id="ENIQReader3" /></td><td></td></tr></table>';
+                                else if(name=='LG')document.getElementById('div2').innerHTML='<table width="439" height="50" border="1"><tr><th width="90" scope="col"></th><th width="162" scope="col"></th></tr><tr><td>Coordinator </td><td><input type="text" name="ENIQCoordinator" id="ENIQCoordinator" /></td><td></td></tr><tr><td>Presentaion </td><td><input type="text" name="ENIQPresentation" id="ENIQPresentation" /></td><td></td></tr><tr><td>Mediation </td><td><input type="text" name="ENIQMediation" id="ENIQMediation" /></td><td></td></tr><tr><td>Reader 1 </td><td><input type="text" name="ENIQReader1" id="ENIQReader1" /></td><td></td></tr></table>';
+                                else document.getElementById('div2').innerHTML='';
+        
+                        }
+                        
+                        function showfield3(name)
+                        {
+                                //Comment out until all aspects of test available
+                                //if (name=='II')document.getElementById('div3').innerHTML='<table width="439" height="50" border="1"><tr><th width="167" scope="col"></th><th width="162" scope="col"></th><th width="88" scope="col"></th></tr><tr><td>Test Type</td><td><select name="InstType" size="1" id="InstType"><option value="PS5" align="center" >Please Select</option><option value="IO">Install Only</option><option value="IAT">Install & Test</option><option value="IAU">Install & Upgrade</option><option value="IUT">Install & Upgrade & Test</option><option value="TO">Test Only</option> </select></td> <td>&nbsp;</td> </tr><tr><td>Deploy Type</td><td><select name="DeployType" size="1" id="DeployType" onchange="showfield2(this.options[this.selectedIndex].value)"><option value="PS6" align="center" >Please Select</option><option value="ST" align="center">ENIQ Events/Stats StandAlone</option><option value="SM" align="center">ENIQ Events/Stats Small</option><option value="MD" align="center">ENIQ Events Medium</option><option value="LG" align="center">ENIQ Events Large</option></select></td><td>&nbsp;</td></tr></table>';
+                                //else if(name=='UG')document.getElementById('div3').innerHTML='<table width="439" height="50" border="1"><tr><th width="167" scope="col"></th><th width="162" scope="col"></th><th width="88" scope="col"></th></tr><tr><td>Test Type </td><td><select name="InstType" size="1" id="InstType"><option value="PS5" align="center" >Please Select</option><option value="UO">Upgrade Only</option><option value="UAT">Upgrade & Test</option><option value="IAU">Install & Upgrade</option></option><option value="IUT">Install & Upgrade & Test</option><option value="TO">Test Only</option> </select></td> <td>&nbsp;</td></tr><tr><td>Deploy Type </td><td><select name="DeployType" size="1" id="DeployType" onchange="showfield2(this.options[this.selectedIndex].value)"><option value="PS6" align="center" >Please Select</option><option value="ST" align="center">ENIQ Events/Stats StandAlone</option><option value="SM" align="center">ENIQ Events/Stats Small</option><option value="MD" align="center">ENIQ Events Medium</option><option value="LG" align="center">ENIQ Events Large</option></select></td><td>&nbsp;</td></tr></table>';
+                                
+                                if (name=='II')
+                                {
+                                        if(create_cron.events.checked == true)
+                                        {
+                                                document.getElementById('div3').innerHTML='<table width="439" height="50" border="1"><tr><th width="90" scope="col"></th><th width="162" scope="col"></th></tr><tr><td>Test Type</td><td><select name="InstType" size="1" id="InstType"><option value="PS5" align="center" >Please Select</option><option value="IO">Install Only</option><option value="IAU">Install & Upgrade</option></select></td> <td>&nbsp;</td> </tr><tr><td>Deploy Type</td><td><select name="DeployType" size="1" id="DeployType" onchange="showfield2(this.options[this.selectedIndex].value)"><option value="PS6" align="center" >Please Select</option><option value="ST" align="center">ENIQ Events StandAlone</option><option value="SM" align="center">ENIQ Events Small</option><option value="MD" align="center">ENIQ Events Medium</option><option value="LG" align="center">ENIQ Events Large</option></select></td><td>&nbsp;</td></tr></table>';
+                                        }
+                                        else
+                                        {
+                                                document.getElementById('div3').innerHTML='<table width="439" height="50" border="1"><tr><th width="90" scope="col"></th><th width="162" scope="col"></th></tr><tr><td>Test Type</td><td><select name="InstType" size="1" id="InstType"><option value="PS5" align="center" >Please Select</option><option value="IO">Install Only</option><option value="IAU">Install & Upgrade</option></select></td> <td>&nbsp;</td> </tr><tr><td>Deploy Type</td><td><select name="DeployType" size="1" id="DeployType" onchange="showfield2(this.options[this.selectedIndex].value)"><option value="PS6" align="center" >Please Select</option><option value="ST" align="center">ENIQ Stats StandAlone</option><option value="STATS_SM" align="center">ENIQ Stats Small</option></select></td><td>&nbsp;</td></tr></table>';
+                                        }
+                                }
+                                                        
+                                else if(name=='UG')
+                                {
+                                        if(create_cron.events.checked == true)
+                                        {
+                                                document.getElementById('div3').innerHTML='<table width="439" height="50" border="1"><tr><th width="90" scope="col"></th><th width="162" scope="col"></th></tr><tr><td>Test Type </td><td><select name="InstType" size="1" id="InstType"><option value="PS5" align="center" >Please Select</option><option value="UO">Upgrade Only</option><option value="IAU">Install & Upgrade</option></option></select></td> <td>&nbsp;</td></tr><tr><td>Deploy Type </td><td><select name="DeployType" size="1" id="DeployType" onchange="showfield2(this.options[this.selectedIndex].value)"><option value="PS6" align="center" >Please Select</option><option value="ST" align="center">ENIQ Events StandAlone</option><option value="SM" align="center">ENIQ Events Small</option><option value="MD" align="center">ENIQ Events Medium</option><option value="LG" align="center">ENIQ Events Large</option></select></td><td>&nbsp;</td></tr></table>';
+                                        }
+                                        else
+                                        {
+                                                document.getElementById('div3').innerHTML='<table width="439" height="50" border="1"><tr><th width="90" scope="col"></th><th width="162" scope="col"></th></tr><tr><td>Test Type </td><td><select name="InstType" size="1" id="InstType"><option value="PS5" align="center" >Please Select</option><option value="UO">Upgrade Only</option><option value="IAU">Install & Upgrade</option></option></select></td> <td>&nbsp;</td></tr><tr><td>Deploy Type </td><td><select name="DeployType" size="1" id="DeployType" onchange="showfield2(this.options[this.selectedIndex].value)"><option value="PS6" align="center" >Please Select</option><option value="ST" align="center">ENIQ Stats StandAlone</option><option value="STATS_SM" align="center">ENIQ Stats Small</option></select></td><td>&nbsp;</td></tr></table>';
+                                        }
+                                }
+                        }      
+                        function checkform ( create_cron )
+                        {
+                                if (create_cron.SIGNUMID.value == "")
+                                {
+                                        alert( "Please enter your signam id." );
+                                        create_cron.SIGNUMID.focus();
+                                        return false ;
+                                }
+                                
+                                if (create_cron.Min.value == "PS")
+                                {
+                                        alert( "Please Enter the Minute." );
+                                        create_cron.Min.focus();
+                                        return false ;
+                                }
+                                
+                                if (create_cron.Hour.value == "PS1")
+                                {
+                                        alert( "Please Enter an Hour (24 hr clock)." );
+                                        create_cron.Hour.focus();
+                                        return false ;
+                                }
+                                
+                                if (create_cron.every_day.checked == false && create_cron.sunday.checked == false && create_cron.monday.checked == false &&create_cron.tuesday.checked == false && create_cron.wednesday.checked == false && create_cron.thursday.checked == false && create_cron.friday.checked == false && create_cron.saturday.checked == false)
+                                {
+                                        alert ('Please Choose a Day(s)');
+                                        return false;
+                                }
+                                
+                                if (create_cron.projectSelect.selectedIndex == 0) 
+                                {
+                                        alert("Please select a Release");
+                                        create_cron.projectSelect.focus();
+                                        return false;
+                                }
+                   
+                                if (create_cron.mediaSelect.selectedIndex == 0) 
+                                {
+                                        alert("Please select a LLSV");
+                                        create_cron.mediaSelect.focus();
+                                        return false;
+                                }
+                                
+                                if (create_cron.deliverycheckyes.checked == false && create_cron.deliverycheckno.checked == false ) 
+                                {
+                                        alert("Please select Delivery Check Option Yes/No");
+                                        create_cron.mediaSelect.focus();
+                                        return false;
+                                }
+                                
+                                if (create_cron.deliverycheckyes.checked == true && create_cron.modulepath.value == "" ) 
+                                {
+                                        alert("Please Give Path to Delivery Check Modules, this path should be shared over the Network");
+                                        create_cron.mediaSelect.focus();
+                                        return false;
+                                }
+
+                                if (create_cron.events.checked == false && create_cron.stats.checked == false ) 
+                                {
+                                        alert("Please select Eniq Type Stats/Events");
+                                        create_cron.mediaSelect.focus();
+                                        return false;
+                                }
+
+                                if(create_cron.events.checked == true)
+                                {
+                                        if (create_cron.allfeatures.checked == false && create_cron.feature1.checked == false && create_cron.feature2.checked == false && create_cron.feature3.checked == false && create_cron.feature4.checked == false && create_cron.feature5.checked == false && create_cron.feature6.checked == false && create_cron.feature7.checked == false && create_cron.feature8.checked == false && create_cron.feature9.checked == false && create_cron.feature10.checked == false && create_cron.feature11.checked == false && create_cron.feature12.checked == false && create_cron.feature13.checked == false && create_cron.feature14.checked == false && create_cron.feature15.checked == false)
+                                        {
+                                                alert ('Please Choose Feature Type(s)');
+                                                return false;
+                                        }
+
+                                        if (create_cron.regressionall.checked == false && create_cron.noregression.checked == false && create_cron.regression1.checked == false && create_cron.regression2.checked == false && create_cron.regression3.checked == false && create_cron.regression4.checked == false && create_cron.regression5.checked == false && create_cron.regression6.checked == false)
+                                        {
+                                                alert ('Please Choose Regression Type(s)');
+                                                return false;
+                                        }
+                                }
+                                else if(create_cron.stats.checked == true)
+                                {
+                                        if (create_cron.allfeatures.checked == false && create_cron.feature1.checked == false && create_cron.feature2.checked == false && create_cron.feature3.checked == false && create_cron.feature4.checked == false && create_cron.feature5.checked == false && create_cron.feature6.checked == false && create_cron.feature7.checked == false && create_cron.feature8.checked == false && create_cron.feature9.checked == false && create_cron.feature10.checked == false && create_cron.feature11.checked == false && create_cron.feature12.checked == false && create_cron.feature13.checked == false && create_cron.feature14.checked == false && create_cron.feature15.checked == false && create_cron.feature16.checked == false && create_cron.feature17.checked == false && create_cron.feature18.checked == false && create_cron.feature19.checked == false && create_cron.feature20.checked == false && create_cron.feature21.checked == false && create_cron.feature22.checked == false && create_cron.feature23.checked == false && create_cron.feature24.checked == false && create_cron.feature25.checked == false)
+                                        {
+                                                alert ('Please Choose Feature Type(s)');
+                                                return false;
+                                        }
+
+                                        if (create_cron.regressionall.checked == false && create_cron.noregression.checked == false ) 
+                                        {
+                                                alert ('Please Choose Regression Type(s)');
+                                                return false;
+                                        }
+                                }
+                                
+                                if (create_cron.ServerAction.value == "PS4") 
+                                {
+                                        alert( "Please enter Server Action Install or Upgrade " );
+                                        create_cron.ServerAction.focus();
+                                        return false ;
+                                }
+                                
+                                if (create_cron.InstType.value == "PS5") 
+                                {
+                                        alert( "Please enter Test Type" );
+                                        create_cron.InstType.focus();
+                                        return false ;
+                                }
+                                
+                                if (create_cron.DeployType.value == "PS6") 
+                                {
+                                        alert( "Please enter Deployment Type" );
+                                        create_cron.DeployType.focus();
+                                        return false ;
+                                }
+                                
+                                if ((create_cron.DeployType.value == "ST") && (create_cron.ServerAction.value == "II"))
+                                {
+                                        if ((create_cron.InstType.value == "IO" || create_cron.InstType.value == "IAT" || create_cron.InstType.value == "TO"))
+                                        {
+                                                if (create_cron.ENIQServer.value == "") 
+                                                {
+                                                        alert( "Please Enter Hostname of II Server." );
+                                                        create_cron.ENIQServer.focus();
+                                                        return false ;
+                                                }
+                                        }
+                                        else
+                                        {
+                                                if (create_cron.ENIQServer.value == "") 
+                                                {
+                                                        alert( "Please Enter Hostname of II Server." );
+                                                        create_cron.ENIQServer.focus();
+                                                        return false ;
+                                                }
+                                                if (create_cron.ENIQUGServer.value == "") 
+                                                {
+                                                        alert( "Please Enter Hostname of UG Server." );
+                                                        create_cron.ENIQUGServer.focus();
+                                                        return false ;
+                                                }
+                                        }
+                                                
+                                }
+                                
+                                if ((create_cron.DeployType.value == "ST") && (create_cron.ServerAction.value == "UG"))
+                                {
+                                        if ((create_cron.InstType.value == "UO" || create_cron.InstType.value == "UAT" || create_cron.InstType.value == "TO"))
+                                        {
+                                                if (create_cron.ENIQUGServer.value == "") 
+                                                {
+                                                        alert( "Please Enter Hostname of UG Server." );
+                                                        create_cron.ENIQUGServer.focus();
+                                                        return false ;
+                                                }
+                                        }
+                                        else
+                                        {
+                                                if (create_cron.ENIQServer.value == "") 
+                                                {
+                                                        alert( "Please Enter Hostname of II Server." );
+                                                        create_cron.ENIQServer.focus();
+                                                        return false ;
+                                                }
+                                                if (create_cron.ENIQUGServer.value == "") 
+                                                {
+                                                        alert( "Please Enter Hostname of UG Server." );
+                                                        create_cron.ENIQUGServer.focus();
+                                                        return false ;
+                                                }
+                                        }
+                                                
+                                }
+                                
+                                
+                                else if ((create_cron.DeployType.value == "SM" || create_cron.DeployType.value == "LG" ) && (create_cron.ServerAction.value == "II" || create_cron.ServerAction.value == "UG" ))
+                                {
+                                        if (create_cron.ENIQCoordinator.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of the Coordinator Server." );
+                                                create_cron.ENIQCoordinator.focus();
+                                                return false ;
+                                        }
+                                        if (create_cron.ENIQPresentation.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of Presentation Server." );
+                                                create_cron.ENIQPresentation.focus();
+                                                return false ;
+                                        }
+                                        if (create_cron.ENIQMediation.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of Mediation Server." );
+                                                create_cron.ENIQMediation.focus();
+                                                return false ;
+                                        }
+                                        if (create_cron.ENIQReader1.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of Reader Server." );
+                                                create_cron.ENIQReader1.focus();
+                                                return false ;
+                                        }
+                                }
+                                else if ((create_cron.DeployType.value == "STATS_SM") && (create_cron.ServerAction.value == "II" || create_cron.ServerAction.value == "UG" ))
+                                {
+                                        if (create_cron.ENIQCoordinator.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of the Coordinator Server." );
+                                                create_cron.ENIQCoordinator.focus();
+                                                return false ;
+                                        }
+                                        if (create_cron.ENIQEngine.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of Engine Server." );
+                                                create_cron.ENIQEngine.focus();
+                                                return false ;
+                                        }
+                                        if (create_cron.ENIQReader1.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of Reader Server." );
+                                                create_cron.ENIQReader1.focus();
+                                                return false ;
+                                        }
+                                        if (create_cron.ENIQReader2.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of Reader Server." );
+                                                create_cron.ENIQReader2.focus();
+                                                return false ;
+                                        }
+                                }
+                                
+                                else if ((create_cron.DeployType.value == "MD") && (create_cron.ServerAction.value == "II" || create_cron.ServerAction.value == "UG" ))
+                                {
+                                        if (create_cron.ENIQCoordinator.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of the Coordinator Server." );
+                                                create_cron.ENIQCoordinator.focus();
+                                                return false ;
+                                        }
+                                        if (create_cron.ENIQPresentation.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of Presentation Server." );
+                                                create_cron.ENIQPresentation.focus();
+                                                return false ;
+                                        }
+                                        if (create_cron.ENIQMediation.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of Mediation Server." );
+                                                create_cron.ENIQMediation.focus();
+                                                return false ;
+                                        }
+                                        if (create_cron.ENIQReader1.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of Reader One Server." );
+                                                create_cron.ENIQReader1.focus();
+                                                return false ;
+                                        }
+                                        if (create_cron.ENIQReader2.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of Reader Two Server." );
+                                                create_cron.ENIQReader2.focus();
+                                                return false ;
+                                        }
+                                        if (create_cron.ENIQReader3.value == "") 
+                                        {
+                                                alert( "Please Enter Hostname of Reader Three Server." );
+                                                create_cron.ENIQReader3.focus();
+                                                return false ;
+                                        }
+                                }
+                                return true ;
+                        }
+                        
+                        function checkform2 ( edit_cron )
+                        {
+                                if (edit_cron.updatepresent.value == "PS") 
+                                {
+                                        alert( "Please enter the Update Type." );
+                                        edit_cron.updatepresent.focus();
+                                        return false ;
+                                }
+                        
+                                if (edit_cron.SIGNUMID.value == "")
+                                {
+                                        alert( "Please enter your signam id." );
+                                        edit_cron.SIGNUMID.focus();
+                                        return false ;
+                                }
+
+                                if (edit_cron.hostname.value == "") 
+                                {
+                                        alert( "Please enter the hostname of Server." );
+                                        edit_cron.hostname.focus();
+                                        return false ;
+                                }
+                                return true ;
+                        }
+                        
+                        function Toggle(thediv) 
+                        { 
+                                document.getElementById("div10").style.display = "none"; 
+                                document.getElementById("div11").style.display = "none";
+                                document.getElementById(thediv).style.display = "block"; 
+                        }
+
+                        function Toggle1(thediv1) 
+                        { 
+                                document.getElementById("div12").style.display = "none";
+                                document.getElementById("div13").style.display = "none"; 
+                                document.getElementById(thediv1).style.display = "block"; 
+                        }
+                </script> 
+ 
+                <link rel="stylesheet" type="text/css" href="http://users.eei.ericsson.se/~edalind/main.css" /> 
+                <style type="text/css"> 
+                        body {margin: 1cm 2cm 2cm 2cm}
+                        .built_package {background-color: #BBFFBB}
+                        .built_lyellow {background-color: #FFFF99}
+                        .built_yellow {background-color: #FFFF00}
+                        .built_orange {background-color: #FF9900}
+                        .built_lime {background-color: #99FF99}
+                        .built_blue {background-color: #6699CC}
+                        .built_purple {background-color: #9900CC}
+                        a:visited {color: blue}
+   
+                        fieldset 
+                        { 
+                                border:1px solid white; 
+                                position: relative; 
+                        }
+
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid white;
+  color:white;
+  text-align:right;
+  }
+
+                        table, th, td 
+                        {
+                                border: none;
+                                border-collapse: collapse;
+                                font-family: "Trebuchet MS", Arial, sans-serif;
+                                color: #555;
+                                font-size: 100%;
+                        }
+ 
+                        caption 
+                        {
+                                font-size: 150%;
+                                font-weight: bold;
+                                margin: 5px;
+                        }
+ 
+                        td, th 
+                        {
+                                padding: 4px;
+                        }
+ 
+                        thead th 
+                        {
+                                text-align: left;
+                                background: #FCFDFE;
+                                color: #4F76A3;
+                                font-size: 100% !important;
+                        }
+                         
+                        tbody th 
+                        {
+                                font-weight: bold;
+                        }
+                         
+                        tbody tr th, tbody tr td 
+                        {
+                                border: none;
+                                border: none;
+                                padding: 9px;
+                        }
+                        
+                        #apDiv1 
+                        {
+                                position:absolute;
+                                width:81px;
+                                height:26px;
+                                z-index:1;
+                                left: 250px;
+                                top: 10px;
+                        }
+                        #apDiv2 
+                        {
+                                position:absolute;
+                                width:485px;
+                                height:226px;
+                                z-index:1;
+                                left: 545px;
+                                top: 232px;
+                        }
+                        #div10, #div11, #div12, #div13
+                        { 
+                                DISPLAY: none; 
+                        } 
+                         
+                        tbody tr:hover, tbody tr.odd:hover 
+                        {
+                                background: #FCFDFE;
+                        }
+                         
+                        table a:link 
+                        {
+                                color: #718ABE;
+                                text-decoration: underline !important;
+                        }
+                         
+                        table a:visited 
+                        {
+                                color: #718ABE;
+                                text-decoration: underline !important;
+                        }
+                         
+                        table a:hover 
+                        {
+                                color: #718ABE;
+                                text-decoration: underline !important;
+                        }
+                         
+                        tfoot th, tfoot td 
+                        {
+                                font-size: 85%;
+                        }
+                        .style1 {font-size: 20pt}
+                        .style2 {font-size: 14pt; color: #FF0000}
+                        #apDiv3 
+                        {
+                                position:absolute;
+                                width:493px;
+                                height:747px;
+                                z-index:1;
+                                left: 1000px;
+                                top: 0px;
+                        }
+                        #apDiv4 
+                        {
+                                position:absolute;
+                                width:493px;
+                                height:300px;
+                                z-index:1;
+                                left: 460px;
+                                top: 25px;
+                        }
+                        #apDiv6
+                        {
+                                position:absolute;
+                                width:493px;
+                                height:747px;
+                                z-index:1;
+                                left: 600px;
+                                top: 790px;
+                        }
+                        #apDiv7 
+                        {
+                                position:absolute;
+                                width:493px;
+                                height:447px;
+                                z-index:1;
+                                left: 1080px;
+                                top: 530px;
+                        }
+                </style> 
+ 
+        <title>Cron Update Webpage </title> 
+        </head> 
+ 
+        <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000" onload="CoolClock.findAndCreateClocks()"> 
+
+                <p align="center"><img id="_x0000_i1025" src="http://clearcase-oss.lmera.ericsson.se/view/www_eniq/vobs/ossrc/del-mgt/html/img/new_ericsson_logo_banner1.jpg" alt="Ericsson Logo">
+                        
+                        <p class="MsoNormal" style="text-align: center;"><strong><span class="style1">CI Automation Subscription Service Scheduler LMI</span></strong></p> 
+                        <br>
+                        <p class="MsoNormal" style="text-align: center;"><strong><span class="style2">Please note: All times should be entered as Swedish time</span></strong></p>
+                <p align="center">
+
+<p align="center"><img id="_x0000_i1025" src="http://clearcase-oss.lmera.ericsson.se/view/www_eniq/vobs/ossrc/del-mgt/html/img/banner.jpg" alt="Ericsson Logo" width="1000" height="17">
+  
+                <fieldset> 
+<form id="create_cron" method="get" action="http://atrcx1089.athtem.eei.ericsson.se/cgi-bin/BROADCAST/ENIQ/createcron_broadcast_hub"  onsubmit="return checkform(create_cron);"> 
+                                <p align="left"><b>-- ENIQ EVENTS (or) STATISTICS--</b></p>
+
+                                        <p align="left"><b>-- ADD New Schedule Details Below --</b></p>
+
+                                <table width="439" height="482" border="1">
+
+                                        <tr>
+ 
+                                                <th width="90" scope="col">Question</th>
+ 
+                                                <th width="162" scope="col">Input</th>
+
+                                        </tr>
+
+                                        
+                                        <tr>
+
+                                                <td>Request</td>
+
+                                                <td><input type="text" name="update" id="update" value="Add" readonly="&quot"/></td>
+
+                                        </tr>
+
+                                        <tr>
+
+                                        <td>SIGNUMID</td>
+<td><input type="text" name="SIGNUMID" id="SIGNUMID" value="ewanliz" readonly="&quot"/></td>
+
+
+                                        </tr>
+
+                                        <tr> 
+
+                                                <td>Minute</td>
+
+                                                <td>
+
+                                                        <select name="Min" id="Min">
+
+                                                                <option value="PS" rel="PS" >Please Select</option>
+
+                                                                <option value="00" rel="none" >00</option>
+
+                                                                <option value="01" rel="none" >01</option>
+
+                                                                <option value="02" rel="none" >02</option>
+
+                                                                <option value="03" rel="none" >03</option>
+
+                                                                <option value="04" rel="none" >04</option>
+
+                                                                <option value="05" rel="none" >05</option>
+
+                                                                <option value="06" rel="none" >06</option>
+
+                                                                <option value="07" rel="none" >07</option>
+
+                                                                <option value="08" rel="none" >08</option>
+
+                                                                <option value="09" rel="none" >09</option>
+
+                                                                <option value="10" rel="none" >10</option>
+
+                                                                <option value="11" rel="none" >11</option>
+
+                                                                <option value="12" rel="none" >12</option>
+
+                                                                <option value="13" rel="none" >13</option>
+
+                                                                <option value="14" rel="none" >14</option>
+
+                                                                <option value="15" rel="none" >15</option>
+
+                                                                <option value="16" rel="none" >16</option>
+
+                                                                <option value="17" rel="none" >17</option>
+
+                                                                <option value="18" rel="none" >18</option>
+
+                                                                <option value="19" rel="none" >19</option>
+
+                                                                <option value="20" rel="none" >20</option>
+
+                                                                <option value="21" rel="none" >21</option>
+
+                                                                <option value="22" rel="none" >22</option>
+
+                                                                <option value="23" rel="none" >23</option>
+
+                                                                <option value="24" rel="none" >24</option>
+
+                                                                <option value="25" rel="none" >25</option>
+
+                                                                <option value="26" rel="none" >26</option>
+
+                                                                <option value="27" rel="none" >27</option>
+
+                                                                <option value="28" rel="none" >28</option>
+
+                                                                <option value="29" rel="none" >29</option>
+
+                                                                <option value="30" rel="none" >30</option>
+
+                                                                <option value="31" rel="none" >31</option>
+
+                                                                <option value="32" rel="none" >32</option>
+
+                                                                <option value="33" rel="none" >33</option>
+
+                                                                <option value="34" rel="none" >34</option>
+
+                                                                <option value="35" rel="none" >35</option>
+
+                                                                <option value="36" rel="none" >36</option>
+
+                                                                <option value="37" rel="none" >37</option>
+
+                                                                <option value="38" rel="none" >38</option>
+
+                                                                <option value="39" rel="none" >39</option>
+
+                                                                <option value="40" rel="none" >40</option>
+
+                                                                <option value="41" rel="none" >41</option>
+
+                                                                <option value="42" rel="none" >42</option>
+
+                                                                <option value="43" rel="none" >43</option>
+
+                                                                <option value="44" rel="none" >44</option>
+
+                                                                <option value="45" rel="none" >45</option>
+
+                                                                <option value="50" rel="none" >50</option>
+
+                                                                <option value="51" rel="none" >51</option>
+
+                                                                <option value="52" rel="none" >52</option>
+
+                                                                <option value="53" rel="none" >53</option>
+
+                                                                <option value="54" rel="none" >54</option>
+
+                                                                <option value="55" rel="none" >55</option>
+
+                                                                <option value="56" rel="none" >56</option>
+
+                                                                <option value="57" rel="none" >57</option>
+
+                                                                <option value="58" rel="none" >58</option>
+
+                                                                <option value="59" rel="none" >59</option>
+
+                                                        </select>
+
+                                                </td>
+
+                                                <td>&nbsp;</td>
+
+                                        </tr>
+
+                                        <tr>
+
+                                                <td>Hour</td> 
+
+                                                <td>
+
+                                                        <select name="Hour" id="Hour">
+
+                                                                <option value="PS1" rel="PS1" >Please Select</option>
+
+                                                                <option value="00">00</option>
+
+                                                                <option value="01">01</option>
+
+                                                                <option value="02">02</option>
+
+                                                                <option value="03">03</option>
+
+                                                                <option value="04">04</option>
+
+                                                                <option value="05">05</option>
+
+                                                                <option value="06">06</option>
+
+                                                                <option value="07">07</option>
+
+                                                                <option value="08">08</option>
+
+                                                                <option value="09">09</option>
+
+                                                                <option value="10">10</option>
+
+                                                                <option value="11">11</option>
+
+                                                                <option value="12">12</option>
+
+                                                                <option value="13">13</option>
+
+                                                                <option value="14">14</option>
+
+                                                                <option value="15">15</option>
+
+                                                                <option value="16">16</option>
+
+                                                                <option value="17">17</option>
+
+                                                                <option value="18">18</option>
+
+                                                                <option value="19">19</option>
+
+                                                                <option value="20">20</option>
+
+                                                                <option value="21">21</option>
+
+                                                                <option value="22">22</option>
+
+                                                                <option value="23">23</option>
+
+                                                        </select></td>
+
+                                                <td>&nbsp;</td>
+
+                                        </tr>
+ 
+                                        <tr>
+
+                                                <td class="daysw">Day(s)</td>
+
+                                                <td>
+
+                                                                
+                                                <div style="font-size:90%"><input type="checkbox" name="every_day" value="7_COMMA" />&nbsp;&nbsp;Every Day</br>
+
+
+                                                                <input type="checkbox" name="sunday" value="0_COMMA" />&nbsp;&nbsp;Sunday</br>
+
+
+                                                                <input type="checkbox" name="monday" value="1_COMMA" />&nbsp;&nbsp;Monday</br>
+
+
+                                                                <input type="checkbox" name="tuesday" value="2_COMMA" />&nbsp;&nbsp;Tuesday</br>
+
+
+                                                                <input type="checkbox" name="wednesday" value="3_COMMA" />&nbsp;&nbsp;Wednesday</br>
+
+
+                                                                <input type="checkbox" name="thursday" value="4_COMMA" />&nbsp;&nbsp;Thursday</br>
+
+
+                                                                <input type="checkbox" name="friday" value="5_COMMA" />&nbsp;&nbsp;Friday</br>
+
+
+                                                                <input type="checkbox" name="saturday" value="6_COMMA" />&nbsp;&nbsp;Saturday</br></div>
+
+                                                </td>
+
+                                <td></td>
+
+                                </tr>
+
+                                <tr>
+
+                                        <td>Release</td>
+
+                                        <td>
+
+                                                <select id="projectSelect" name="Release" onchange="populateMedia()">
+
+                        
+                                                </select>
+
+                                        </td>
+
+                                        <td></td>
+
+                                        
+                                </tr>
+
+                                <tr>
+
+                                        <td>LLSV</td>
+
+                                                <td>
+
+                                                        <select id="mediaSelect" name="BuildType">
+
+                        
+                                                        </select>
+
+                                                </td>
+
+                                                <td></td>
+
+                                </tr>
+
+
+                                <script type="text/javascript">initProject('AXE'); </script>
+
+                        
+                                <td class="deliverycheck">Delivery Check</td>
+
+                                <td>
+
+
+                                <div style="font-size:90%">
+
+
+                                <input type="radio" name="Toggledivs" id="deliverycheckyes" onclick="Toggle1('div12');" />Yes<br />
+
+                                <input type="radio" name="Toggledivs" id="deliverycheckno" onclick="Toggle1('div13');"/>No<br />
+
+
+                                </div>
+
+                                </td>
+
+                                </tr>
+
+
+                                </table>
+
+                                <div id="div12">
+
+                                <table width="439" height="20" border="1">
+
+
+                                <tr>
+
+
+                                <th width="90" scope="col"></th>
+
+
+                                <th width="162" scope="col"></th>
+
+
+                                </tr>
+
+
+                                <tr>
+
+
+                                <td>Path</td> 
+
+
+                                <td><input type="text" name="modulepath" id="modulepath"/></td>
+
+
+                                <td>eg: /net/ip/dir</td>
+
+
+                                </tr>
+
+                                </table>
+
+                                </div>
+
+                                <div id="div13"></div>
+
+                                                                <table width="439" height="50" border="1">
+
+                                                                        <tr>
+
+                                                                                <th width="90" scope="col"></th>
+
+                                                                                <th width="162" scope="col"></th>
+
+                                                                        <tr>
+
+                                                                                <td class="deliverycheck">ENIQ Type</td>
+
+                                                                                <td>
+
+                                                                                        <div style="font-size:90%">
+
+                                                                                                <input type="radio" name="Toggledivs1" id="stats" onclick="Toggle('div10');" />Stats<br />
+
+                                                                                                <input type="radio" name="Toggledivs1" id="events" onclick="Toggle('div11');" />Events<br />
+
+                                                                                        </div></td>
+
+                                                                                <td></td>
+
+                                                                        </tr>
+
+                                                                </table>
+<div id="div10">
+                                                                        <table width="439" height="50" border="1">
+
+                                                                                <tr>
+
+                                                                                        <th width="90" scope="col"></th>
+
+                                                                                        <th width="162" scope="col"></th>
+
+                                                                                </tr>
+
+<tr><td class="features">Feature(s)</td><td>
+
+<div style="font-size:90%"><input type="checkbox" name="allfeatures" value="ALL" />&nbsp;&nbsp;All Features</br>
+
+<input type="checkbox" name="feature1" value="1" />&nbsp;&nbsp;Ericsson Network IQ PM Alarm Module</br>
+
+<input type="checkbox" name="feature2" value="2" />&nbsp;&nbsp;Ericsson GSM BSS PM Tech Pack</br>
+
+<input type="checkbox" name="feature3" value="3" />&nbsp;&nbsp;Ericsson WCDMA RAN PM Tech Pack</br>
+
+<input type="checkbox" name="feature4" value="4" />&nbsp;&nbsp;Ericsson CS Core (AXE) PM Tech Pack</br>
+
+<input type="checkbox" name="feature5" value="5" />&nbsp;&nbsp;Ericsson MGW PM Tech Pack</br>
+
+<input type="checkbox" name="feature6" value="6" />&nbsp;&nbsp;Ericsson SGSN PM Tech Pack</br>
+
+<input type="checkbox" name="feature7" value="7" />&nbsp;&nbsp;Ericsson GGSN PM Tech Pack</br>
+
+<input type="checkbox" name="feature8" value="8" />&nbsp;&nbsp;Ericsson SASN PM Tech Pack</br>
+
+<input type="checkbox" name="feature9" value="9" />&nbsp;&nbsp;Ericsson SMPC PM Tech Pack</br>
+
+<input type="checkbox" name="feature10" value="10" />&nbsp;&nbsp;Ericsson SARA PM Tech Pack</br>
+
+<input type="checkbox" name="feature11" value="11" />&nbsp;&nbsp;Ericsson GSM BSS EBS Tech Pack</br>
+
+<input type="checkbox" name="feature12" value="12" />&nbsp;&nbsp;Ericsson SGSN EBS PM Tech Pack</br>
+
+<input type="checkbox" name="feature13" value="13" />&nbsp;&nbsp;Ericsson WCDMA RAN EBS PM Tech Pack</br>
+
+<input type="checkbox" name="feature14" value="14" />&nbsp;&nbsp;Ericsson CUDB PM Tech Pack</br>
+
+<input type="checkbox" name="feature15" value="15" />&nbsp;&nbsp;Ericsson SmartEdge PM Tech Pack</br>
+
+<input type="checkbox" name="feature16" value="16" />&nbsp;&nbsp;Ericsson TD-SCDMA RAN PM Tech Pack</br>
+
+<input type="checkbox" name="feature17" value="17" />&nbsp;&nbsp;Ericsson SAPC PM Tech Pack</br>
+
+<input type="checkbox" name="feature18" value="18" />&nbsp;&nbsp;Ericsson ML-PPP PM Tech Pack</br>
+
+<input type="checkbox" name="feature19" value="19" />&nbsp;&nbsp;Ericsson CPG PM Tech Pack</br>
+
+<input type="checkbox" name="feature20" value="20" />&nbsp;&nbsp;Ericsson SNMP MIBII PM Tech Pack</br>
+
+<input type="checkbox" name="feature21" value="21" />&nbsp;&nbsp;Ericsson LTE RAN PM Tech Pack</br>
+
+<input type="checkbox" name="feature22" value="22" />&nbsp;&nbsp;Ericsson HSS PM Tech Pack</br>
+
+<input type="checkbox" name="feature23" value="23" />&nbsp;&nbsp;Ericsson WCDMA RAN Load Expert PM Tech Pack</br>
+
+<input type="checkbox" name="feature24" value="24" />&nbsp;&nbsp;Ericsson SIU PM Tech Pack</br>
+
+<input type="checkbox" name="feature25" value="25" />&nbsp;&nbsp;Ericsson BULK CM Tech Pack</br>
+
+</div></td></tr>
+<tr>
+
+                                                                <td class="regression">Regression</td>
+
+                                                                <td>
+
+<div style="font-size:90%"><input type="checkbox" name="noregression" value="None" />&nbsp;&nbsp;No Regression</br>
+
+<input type="checkbox" name="regressionall" value="ALL" />&nbsp;&nbsp;ALL</br>
+
+</div>
+
+                                                                </td><td>
+
+                                                                </td>
+
+                                                                </tr>
+
+                                                                </table>
+
+                                                                </div>
+<div id="div11">
+                                                                        <table width="439" height="50" border="1">
+
+                                                                                <tr>
+
+                                                                                        <th width="90" scope="col"></th>
+
+                                                                                        <th width="162" scope="col"></th>
+
+                                                                                </tr>
+
+<tr><td class="features">Feature(s)</td><td>
+
+<div style="font-size:90%"><input type="checkbox" name="allfeatures" value="ALL" />&nbsp;&nbsp;All Features</br>
+
+<input type="checkbox" name="feature1" value="1" />&nbsp;&nbsp;Ericsson SGSN-MME 2G Event Tech Pack</br>
+
+<input type="checkbox" name="feature2" value="2" />&nbsp;&nbsp;Ericsson SGSN-MME 3G Event Tech Pack</br>
+
+<input type="checkbox" name="feature3" value="3" />&nbsp;&nbsp;Device Analysis</br>
+
+<input type="checkbox" name="feature4" value="4" />&nbsp;&nbsp;Ericsson SGSN-MME 4G Event Tech Pack</br>
+
+<input type="checkbox" name="feature5" value="5" />&nbsp;&nbsp;Ericsson LTE Event Statistics 15 Minutes ROP Tech Pack</br>
+
+<input type="checkbox" name="feature6" value="6" />&nbsp;&nbsp;Circuit Switched Voice and SMS Service CDR Tech Pack</br>
+
+<input type="checkbox" name="feature7" value="7" />&nbsp;&nbsp;Data Bearer Throughput and Data Volume Tech Pack</br>
+
+<input type="checkbox" name="feature8" value="8" />&nbsp;&nbsp;Ericsson WCDMA Call Failure Tech Pack</br>
+
+<input type="checkbox" name="feature9" value="9" />&nbsp;&nbsp;Ericsson WCDMA Handover Failure Tech Pack</br>
+
+<input type="checkbox" name="feature10" value="10" />&nbsp;&nbsp;Ericsson LTE Call Failure Tech Pack</br>
+
+<input type="checkbox" name="feature11" value="11" />&nbsp;&nbsp;Ericsson LTE Handover Failure Tech Pack</br>
+
+<input type="checkbox" name="feature12" value="12" />&nbsp;&nbsp;Ericsson LTE Event Statistics 5 Minutes ROP Tech Pack</br>
+
+<input type="checkbox" name="feature13" value="13" />&nbsp;&nbsp;KPI Threshold Notification</br>
+
+<input type="checkbox" name="feature14" value="14" />&nbsp;&nbsp;Ericsson LTE ANR and PCI Tech Pack</br>
+
+<input type="checkbox" name="feature15" value="15" />&nbsp;&nbsp;LTE Cell Trace Streaming Termination Tech Pack</br>
+
+<input type="checkbox" name="feature16" value="16" />&nbsp;&nbsp;Ericsson GSM Call Failure Tech Pack</br>
+
+<input type="checkbox" name="feature17" value="17" />&nbsp;&nbsp;Ericsson CPG Event Tech Pack</br>
+
+</div></td></tr>
+<tr>
+
+                                                                <td class="regression">Regression</td>
+
+                                                                <td>
+
+<div style="font-size:90%"><input type="checkbox" name="noregression" value="None" />&nbsp;&nbsp;No Regression</br>
+
+<input type="checkbox" name="regressionall" value="ALL" />&nbsp;&nbsp;ALL</br>
+
+<input type="checkbox" name="regression1" value="1" />&nbsp;&nbsp;AAC</br>
+
+<input type="checkbox" name="regression2" value="2" />&nbsp;&nbsp;BASELINE</br>
+
+<input type="checkbox" name="regression3" value="3" />&nbsp;&nbsp;CORE</br>
+
+<input type="checkbox" name="regression4" value="4" />&nbsp;&nbsp;DATAGEN4G</br>
+
+<input type="checkbox" name="regression5" value="5" />&nbsp;&nbsp;LTEES</br>
+
+<input type="checkbox" name="regression6" value="6" />&nbsp;&nbsp;SGEHDVDT</br>
+
+</div>
+
+                                                                </td><td>
+
+                                                                </td>
+
+                                                                </tr>
+
+                                                                </table>
+
+                                                                </div>
+
+                                <table width="439" height="50" border="1">
+
+                                <tr>
+
+                                <th width="90" scope="col"></th>
+
+                                        <th width="162" scope="col"></th>
+
+ 
+                                </tr>
+
+                                <tr>
+
+                                        <td>Action</td>
+                                        <td><select name="ServerAction" size="1" id="ServerAction" onchange="showfield3(this.options[this.selectedIndex].value)">
+
+                                                <option value="PS4" align="center">Please Select</option>
+
+                                                <option value="II" align="center">Initial Install</option>
+
+                                                <option value="UG" align="center">Upgrade</option>
+
+                                                </select>
+
+                                        </td>
+
+                                        <td></td>
+
+                                </tr>
+
+                                         
+                                        </table>
+
+                                        <div id="div1"/>
+
+                                        </div>
+
+                                        <div id="div3">
+
+                                        </div>
+
+                                        <div id="div2">
+
+                                        </div>
+
+                                        
+                                        <!--</div>-->
+
+                                        
+                                        <br>
+
+                                        <br />
+
+                                <table width="439" height="20" border="1">
+
+                                        <tr>
+ 
+                                                <td></td>
+
+                                                <td align="center"><input type="submit" value="Create the Cron" /></td>
+ 
+                                                <td></td>
+
+                                        </tr>
+
+                                </table>
+
+                                </form>
+<div id="apDiv3">
+ 
+                                        <form id="edit_cron" method="get" action="http://atrcx1089.athtem.eei.ericsson.se/cgi-bin/BROADCAST/ENIQ/createcron_broadcast_hub"  onsubmit="return checkform2(edit_cron);"> 
+                                        <p align="left"><b>-- ENIQ EVENTS (or) STATISTICS --</b></p>
+
+                                        <p align="left"><b>- EDIT, DELETE (or) SEARCH Scheduling Details Below -</b></p>
+
+                                        <table width="439" height="20" border="1">
+
+                                        <tr>
+ 
+                                                        <th width="167" scope="col">Question</th>
+
+                                                        <th width="162" scope="col">Input</th>
+ 
+                                                        <th width="88" scope="col">Example</th>
+ 
+                                        </tr>
+ 
+                                        <tr>
+ 
+                                                <td>Update Type</td>
+ 
+                                                <td>
+
+                                                        <select name="updatepresent" id="updatepresent">
+
+                                                                <option value="PS"/>Please Select</option>
+
+                                                                <option value="Edit">Edit</option>
+ 
+                                                                <option value="Delete">Delete</option>
+
+                                                                <option value="Search">Search</option>
+
+                                                        </select>
+
+                                                </td>
+ 
+                                                <td>&nbsp;</td>
+
+                                        </tr>
+
+
+                                         <tr>
+
+                                                        <td>SIGNUMID</td>
+<td><input type="text" name="SIGNUMID" id="SIGNUMID" value="ewanliz" readonly="&quot"/></td>
+<td>&nbsp;</td></tr>
+
+                                                        <tr> 
+                                                                <td>Hostname</td> 
+                                                                <td><input type="text" name="hostname" id="hostname" /></td> 
+                                                                <td>eg: atrcxb1234 </td> 
+                                                        </tr>
+                                                        <tr> 
+                                                                <td></td>
+
+                                                                <td align="center"><input type="submit" value="Start Update" /></td> 
+
+                                                                <td></td>
+                                                        </tr>
+                                                
+                                        </table>        
+                                        </form>
+                                        
+                                </div>
+                                <div id="apDiv4"> 
+                                        <p align="center"><img id="_x0000_i1025" src="http://clearcase-oss.lmera.ericsson.se/view/www_eniq/vobs/ossrc/del-mgt/html/img/centercron.jpg" alt="Ericsson Logo" width="500" height="500"> 
+                                        </div>
+                        </fieldset> 
+                        <div id="apDiv7">
+                        <table>
+                                <tr>
+                                        <td align="center"><b>Ireland</b><br/><br/><canvas id="Ireland" class="CoolClock:fancy:65::"></canvas></canvas></td>
+                                        <td align="center"><b>Sweden</b><br/><br/><canvas id="Sweden" class="CoolClock:Tes2:65::+2 leftRightPad"></canvas></td>
+                                        <td align="center"><b>Bangalore</b><br/><br/><canvas id="Banglore" class="CoolClock:Babosa:65::+5.50 leftRightPad"></canvas></td>
+                                </tr>
+                        </table>
+                        </div>
+                        <br />
+                        <p align="center"><img id="_x0000_i1025" src="http://clearcase-oss.lmera.ericsson.se/view/www_eniq/vobs/ossrc/del-mgt/html/img/banner.jpg" alt="Ericsson Logo" width="1000" height="20">
+<div id="apDiv6">
+                                        <a href="mailto:PDLENIQDEL@ex1.eemea.ericsson.se?subject=Auto Subscription Service Scheduler Question"><img style="width:100px; height:100px; border:1px solid green; float:left;" src="http://clearcase-oss.lmera.ericsson.se/view/www_eniq/vobs/ossrc/del-mgt/html/img/mail.jpg" alt="Mail"></a>
+
+                                        <img style="width:100px; height:100px; border:1px solid green; float:left;" src="http://clearcase-oss.lmera.ericsson.se/view/www_eniq/vobs/ossrc/del-mgt/html/img/close.jpg" onClick="window.close()" alt="Exit">
+
+                                        <a href="http://clearcase-oss.lmera.ericsson.se/view/www_eniq/vobs/ossrc/del-mgt/html/broadcasttmphtml/ewanliz_20121127-17:12:50_cronmainpage.html"><img style="width:100px; height:100px; border:1px solid green; float:left;" src="http://clearcase-oss.lmera.ericsson.se/view/www_eniq/vobs/ossrc/del-mgt/html/img/home.jpg" alt="Home"></a>
+
+                                        <a href="http://atrclin2.athtem.eei.ericsson.se/wiki/index.php/Cron_Setup_FAQ"><img style="width:100px; height:100px; border:1px solid green; float:left;" src="http://clearcase-oss.lmera.ericsson.se/view/www_eniq/vobs/ossrc/del-mgt/html/img/question.jpg" alt="FAQ"></a>
+
+                                        </div></body></html>
+selid1a029.eniqdmt.43> 

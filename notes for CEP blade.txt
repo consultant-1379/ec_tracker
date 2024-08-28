@@ -1,0 +1,2 @@
+/usr/atria/bin/cleartool setview -login -exec "cd /vobs/ossrc/del-mgt; /view/eniq_view/vobs/ossrc/del-mgt/bin//eniq_jump.pl -r ENIQ_E13.0 -s 3.0.1
+4 -n 3 -m atrcxb2461 --si ecrepat" eniq_view

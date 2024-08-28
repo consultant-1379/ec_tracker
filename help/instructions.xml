@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<faqs>
+	<faq>
+		<question>CDM User Guide</question>
+		<answer><![CDATA[<a href="http://cdmweb.ericsson.se/TeamCenterC/controller/ViewDocs?DocumentName=1%2F03802-LXA102130&Revision=G">CDM User Guide Download Link</a> <br>Note: Please contact the <a href="http://internal.ericsson.com/page/hub_inside/support/it/index.jsp?unit=BNET">IT Helpdesk</a> for CDM issues.]]> </answer>
+		
+	</faq>
+	
+	<faq>
+		<question>Export document from CDM to GASK</question>
+		<answer></answer> 
+	</faq>
+</faqs>
